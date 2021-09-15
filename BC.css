@@ -1,0 +1,90 @@
+
+*{
+    font-weight: 500;
+}
+.container{
+    margin-top: 1%;
+    background-color: #a8a7a7;
+    padding: 1% 0 1% 10%;
+}
+.col-2, .col-3{
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+.lastrow{
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin-left: 0;
+}
+button{
+    color: whitesmoke;
+    background-color: #072747f1;
+    width: 83%;
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 6px 1px #afaeae;
+}
+.historyBtns{
+    width: 75%;
+}
+button[class="lrBtns"]{
+    width: 80%;
+    margin-left: -10px;
+}
+#0{
+    width: 90%;
+}
+#fix, #fix2{
+    margin-left: -7px;
+}
+#equaldiv{
+    margin-left: -40px;
+}
+#equals{
+    height: 100%;
+}
+#info, #History{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 64%;
+    height: 160px;
+    margin-left: 12px;
+    text-align: right;
+}
+#History{
+    padding-top: 2px;
+    width: 95%;
+    margin-left: 10px;
+    font-size: 100%;
+}
+#finalScreen{
+    height: 70%;
+    font-size: 160%;
+}
+#editScreen{
+    border-top: 1px solid lightgrey;
+    font-size: 140%;
+}
+#info, #History{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#353535+0,959595+12,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100 */
+    background: #353535; 
+    background: -moz-linear-gradient(-45deg,  #353535 0%, #959595 12%, #0d0d0db0 46%, #010101a9 50%, 
+            #0a0a0a9a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: -webkit-linear-gradient(-45deg,  #353535 0%,#959595 12%,#0d0d0db0 46%, #010101a9 50%, 
+    #0a0a0a9a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+    /* background: linear-gradient(135deg,  #353535 0%,#959595 12%,#0d0d0db0 46%, #010101a9 50%, 
+            #0a0a0a9a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#1b1b1b', */
+            /* GradientType=1 ); IE6-9 fallback on horizontal gradient */
+    color: lightgrey;
+}
+/* design */
+.basic_cal{
+    font-size: 1.5em;
+}
+#historyp1{
+    height: 25%;
+    border-bottom: 1px solid lime;
+}
