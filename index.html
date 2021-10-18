@@ -14,28 +14,25 @@
 <body>
     <div class="container">
         <!-- first half -->
-        <div class="row">
-            <div class="col-4">
-                <div class="row">
+        <div class="row" id="full_calc" >
+            <div class="col-4" id="first_half">
+                <div class="row" >
                     <div class="col-10" id="History"> 
                         <div id="historyp1"></div>
-                        <div id="historyp2"> for functions such as foot use them as shown in the format above. 
-                            after pressing enter when using these functions press the up and down arrows to access
-                            other answers
-                        </div>
+                        <div id="historyp2"></div>
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-3"> <button class="historyBtns" id="trig_state">Deg</button></div>
                     <div class="col-3"> <button class="historyBtns" id="footing">foot</button></div>
                     <div class="col-3"> <button class="historyBtns" id="box_">box</button></div>
                     <div class="col-3"> <button class="historyBtns" id="slab">slab</button></div>
-                    <div class="col-3"> <button class="historyBtns" id="">wall</button></div>
                 </div>
                 <div class="row">
                     <div class="col-3"> <button class="historyBtns number" id="(">(</button></div>
                     <div class="col-3"> <button class="historyBtns number" id=")">)</button></div>
-                    <div class="col-3"> <button class="historyBtns">%</button></div>
-                    <div class="col-3"> <button class="historyBtns number" id=",">&comma;</button></div>
+                    <div class="col-3"> <button class="historyBtns number" id="%">%</button></div>
+                    <div class="col-3"> <button class="historyBtns number" id=",&nbsp;">&comma;</button></div>
                 </div>
                 <div class="row">
                     <div class="col-3"> <button class="historyBtns">1/x</button></div>
@@ -44,78 +41,75 @@
                     <div class="col-3"> <button class="historyBtns power" id="pow">x<sup>y</sup></button></div>
                 </div>
                 <div class="row">
-                    <div class="col-3"> <button class="historyBtns">x!</button></div>
-                    <div class="col-3"> <button class="historyBtns">Sample</button></div>
-                    <div class="col-3"> <button class="historyBtns">Sample</button></div>
-                    <div class="col-3"> <button class="historyBtns">log <sub>10</sub></button></div>
+                    <div class="col-3"> <button class="historyBtns number" id="sin(">sin</button></div>
+                    <div class="col-3"> <button class="historyBtns number" id="cos(">cos</button></div>
+                    <div class="col-3"> <button class="historyBtns number" id="tan(">tan</button></div>
+                    <div class="col-3"> <button class="historyBtns number" id="">log<sub>2</sub></button></div>
                 </div>
                 <div class="row">
-                    <div class="col-3"> <button class="historyBtns shadeGrey">sin</button></div>
-                    <div class="col-3"> <button class="historyBtns shadeGrey">cos</button></div>
-                    <div class="col-3"> <button class="historyBtns shadeGrey">tan</button></div>
-                    <div class="col-3"> <button class="historyBtns shadeGrey">log <sub>2</sub></button></div>
+                    <div class="col-3"> <button class="historyBtns number" id="!">x!</button></div>
+                    <div class="col-3"> <button class="historyBtns" id="pi">&pi;</button></div>
+                    <div class="col-3"> <button class="historyBtns number" id="&Sqrt;(">&Sqrt;</button></div>
+                    <div class="col-3"> <button class="historyBtns">log<sub>10</sub></button></div>
                 </div>
                 <div class="row">
-                    <div class="col-3"> <button class="historyBtns">Deg</button></div>
+                    <div class="col-3"> <button class="historyBtns"><sup>x</sup>&Sqrt;y</button></div>
                     <div class="col-3"> <button class="historyBtns">&pi;</button></div>
                     <div class="col-3"> <button class="historyBtns">EE</button></div>
                     <div class="col-3"> <button class="historyBtns">Rand</button></div>
                 </div>
             </div>
         <!-- second half -->
-            <div class="col-8">
-                <div class="row">
-                    <div class="col-7" id="info"> 
+            <div class="col-8" id="second_half">
+                <div class="row" >
+                    <div class="col-12" id="info">
+                        <div id="state">DEG</div>
                         <div id="finalScreen"></div>
                         <div id="editScreen"> </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-2"> <button class="basic_cal" id="backspace">mc</button></div>
-                    <div class="col-2"> <button class="basic_cal">m+</button></div>
-                    <div class="col-2"> <button class="basic_cal">m-</button></div>
-                    <div class="col-2"> <button class="basic_cal">mr</button></div>
+                    <div class="col-3"> <button id="backspace">mc</button></div>
+                    <div class="col-3"> <button >m+</button></div>
+                    <div class="col-3"> <button >m-</button></div>
+                    <div class="col-3"> <button >mr</button></div>
                 </div>
                 <div class="row">
-                    <div class="col-2"> <button class="basic_cal" id="del">c</button></div>
-                    <div class="col-2"> <button class="basic_cal" id="neg">+/-</button></div>
-                    <div class="col-2"> <button class="basic_cal operator" id="/">&div;</button></div>
-                    <div class="col-2"> <button class="basic_cal operator" id="*">&times;</button></div>
+                    <div class="col-3"> <button  id="del">c</button></div>
+                    <div class="col-3"> <button  id="neg">+/-</button></div>
+                    <div class="col-3"> <button class=" operator" id="/">&div;</button></div>
+                    <div class="col-3"> <button class=" operator" id="*">&times;</button></div>
                 </div>
                 <div class="row">
-                    <div class="col-2"> <button class="basic_cal number" id="7">7</button></div>
-                    <div class="col-2"> <button class="basic_cal number" id="8">8</button></div>
-                    <div class="col-2"> <button class="basic_cal number" id="9">9</button></div>
-                    <div class="col-2"> <button class="basic_cal operator" id="-">&minus;</button></div>
+                    <div class="col-3"> <button class=" number" id="7">7</button></div>
+                    <div class="col-3"> <button class=" number" id="8">8</button></div>
+                    <div class="col-3"> <button class=" number" id="9">9</button></div>
+                    <div class="col-3"> <button class=" operator" id="-">&minus;</button></div>
                 </div>
                 <div class="row">
-                    <div class="col-2"> <button class="basic_cal number" id="4">4</button></div>
-                    <div class="col-2"> <button class="basic_cal number" id="5">5</button></div>
-                    <div class="col-2"> <button class="basic_cal number" id="6">6</button></div>
-                    <div class="col-2"> <button class="basic_cal operator" id="+">&plus;</button></div>
+                    <div class="col-3"> <button class=" number" id="4">4</button></div>
+                    <div class="col-3"> <button class=" number" id="5">5</button></div>
+                    <div class="col-3"> <button class=" number" id="6">6</button></div>
+                    <div class="col-3"> <button class=" operator" id="+">&plus;</button></div>
                 </div>
                 <div class="row">
-                    <div class="row col-7">
+                    <div class="row col-10">
                         <div class="row">
-                            <div class="col-4 lastrow"> <button class="lrBtns basic_cal number" id="1">1</button></div>
-                            <div class="col-4 lastrow"> <button class="lrBtns basic_cal number" id="2">2</button></div>
-                            <div class="col-4 lastrow" id="fix"> <button class="lrBtns basic_cal number" id="3">3</button></div>
+                            <div class="col-4 lastrow"> <button class="number" id="1">1</button></div>
+                            <div class="col-4 lastrow"> <button class="number" id="2">2</button></div>
+                            <div class="col-4 lastrow"> <button class="number" id="3">3</button></div>
                         </div>
                         <div class="row">
                             <div class="col-8 lastrow"> 
-                                <button class="lrBtns basic_cal number" id="0"> 
-                                    <span>0</span>
-                                </button>
+                                <button class="number zero" id="0">0</button>
                             </div>
-                            <div class="col-4 lastrow" id="fix2">
-                                 <button id="." class="lrBtns basic_cal number">&middot;</button>
+                            <div class="col-4 lastrow">
+                                 <button id="." class="number">&middot;</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-2" id="equaldiv">
-                        <button id="equals" class="basic_cal">
-                            <span id="=">&equals;</span> 
-                        </button>
+                        <button id="equals" >&equals;</button>
                     </div>
                 </div>
                 
@@ -126,4 +120,5 @@
 </body>
 <script src="./bc.js"></script>
 <script src="./ex.js"></script>
+<script src="./extra_func.js"></script>
 </html>

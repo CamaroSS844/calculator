@@ -1,16 +1,38 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 *{
     font-weight: 500;
 }
 .container{
-    margin-top: 1%;
-    background-color: #a8a7a7;
-    padding: 1% 0 1% 10%;
+    padding: 0% 0 1% 10%;
+    width: 80%;
+}
+#full_calc{
+    border: 1px solid black;
+    border-radius: 5px;
 }
 .col-2, .col-3{
     display: flex;
     justify-content: center;
     padding: 12px 0;
+}
+#first_half, #second_half{
+    background: #353535; 
+    background: -moz-linear-gradient(-45deg,  #353535 0%, #959595 12%, #0d0d0db0 46%, #010101a9 50%, 
+            #0a0a0a9a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: -webkit-linear-gradient(-45deg,  #353535 0%,#7a7a7a 12%,#0d0d0db0 46%, #010101a9 50%, 
+    #0a0a0a9a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+    padding: 3% 1% 3%;
+}
+#second_half button{
+    font-size: 1.5em;
+    box-shadow: inset 0px 1px 6px 1px #afaeae;
+}
+#first_half button{
+    background-color: #000000;
+    color: #f3ca20;
 }
 .lastrow{
     display: flex;
@@ -19,39 +41,30 @@
     margin-left: 0;
 }
 button{
-    color: whitesmoke;
-    background-color: #072747f1;
+    color: #000000;
+    background-color: #f3ca20;
+    font-weight:900;
     width: 83%;
     height: 45px;
     border-radius: 5px;
+    border: none;
     box-shadow: inset 0px 1px 6px 1px #afaeae;
 }
 .historyBtns{
     width: 75%;
 }
-button[class="lrBtns"]{
-    width: 80%;
-    margin-left: -10px;
-}
-#0{
-    width: 90%;
-}
-#fix, #fix2{
-    margin-left: -7px;
-}
-#equaldiv{
-    margin-left: -40px;
-}
-#equals{
-    height: 100%;
-}
 #info, #History{
     border: 1px solid lightgrey;
     border-radius: 5px;
-    width: 64%;
-    height: 160px;
+    width: 96%;
+    height: 170px;
     margin-left: 12px;
     text-align: right;
+}
+#state{
+    font-size: 0.6em;
+    text-align: left;
+    /* color: lightgrey; */
 }
 #History{
     padding-top: 2px;
@@ -60,7 +73,7 @@ button[class="lrBtns"]{
     font-size: 100%;
 }
 #finalScreen{
-    height: 70%;
+    height: 60%;
     font-size: 160%;
 }
 #editScreen{
@@ -68,21 +81,15 @@ button[class="lrBtns"]{
     font-size: 140%;
 }
 #info, #History{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#353535+0,959595+12,0d0d0d+46,010101+50,0a0a0a+53,4e4e4e+76,383838+87,1b1b1b+100 */
-    background: #353535; 
-    background: -moz-linear-gradient(-45deg,  #353535 0%, #959595 12%, #0d0d0db0 46%, #010101a9 50%, 
-            #0a0a0a9a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
-    background: -webkit-linear-gradient(-45deg,  #353535 0%,#959595 12%,#0d0d0db0 46%, #010101a9 50%, 
-    #0a0a0a9a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
-    /* background: linear-gradient(135deg,  #353535 0%,#959595 12%,#0d0d0db0 46%, #010101a9 50%, 
-            #0a0a0a9a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#1b1b1b', */
-            /* GradientType=1 ); IE6-9 fallback on horizontal gradient */
     color: lightgrey;
 }
 /* design */
-.basic_cal{
-    font-size: 1.5em;
+#equals{
+    width: 100%;
+    height: 100%;
+}
+.zero{
+    width: 90%;
 }
 #historyp1{
     height: 25%;
